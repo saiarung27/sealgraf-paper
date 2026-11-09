@@ -9,43 +9,6 @@ Expires: May 2027
 
                     draft-gunuganti-agent-approval-evidence-00
 
-HEADER NOTE — SUBMISSION PREP ONLY, NOT SUBMITTED
--------------------------------------------------
-This file is the SHORT Internet-Draft skeleton produced by the
-2026-11-08 split of the original long-form skeleton: the problem,
-the approval-evidence object (normative), its verification, and the
-running system as an informative existence proof. The reference
-implementation's field-level receipt-format specification
-(statement types and schema versions, closed vocabularies,
-canonicalisation rules, the full verification procedure) is NOT
-part of this draft; it is retained in an internal document and is
-not published with it.
-
-NOTHING has been submitted to the IETF. Before this text can become
-a real Internet-Draft, the following mechanical steps remain — ALL
-NOT DONE:
-
-  1. Convert this draft to the IETF source format (XML for xml2rfc,
-     or Markdown for kramdown-rfc / mmark) with full rfcxml
-     metadata: docName "draft-gunuganti-agent-approval-evidence-00",
-     seriesInfo, author block with email, and generated references.
-  2. Render with xml2rfc and check the output (text + HTML) against
-     the I-D submission checks (idnits): line length, boilerplate
-     (BCP 78 / BCP 79 status-of-memo text is inserted by the tooling
-     template, not present in this prep file), references format.
-  3. Submit via the IETF Datatracker submission tool
-     (https://datatracker.ietf.org/submit/) — requires a Datatracker
-     account in the author's name and the author's explicit approval
-     of the final text. The venue checklist's Gate 0 must be
-     satisfied before this step: Gate 0 was ruled "provisionals
-     first" (founder, 2026-11-07), so the provisional filings must
-     be filed and timestamped before any submission.
-  4. Announce per the target venue's custom (e.g., the relevant
-     mailing list) only after the -00 posts.
-
-The body below is written in Internet-Draft structure and voice so
-the conversion is mechanical. Section numbering follows the draft.
--------------------------------------------------
 
 Abstract
 
@@ -69,20 +32,9 @@ Abstract
    so that a relying party can verify an approval mechanically
    instead of trusting the agent's assertion.
 
-Status of This Memo
 
-   [Prep note: the standard Internet-Draft boilerplate is inserted
-   at conversion time by the xml2rfc template. This document, when
-   submitted, will be an Internet-Draft: a working document of the
-   Internet Engineering Task Force (IETF), valid for a maximum of
-   six months, citable only as "work in progress".]
 
-Copyright Notice
-
-   [Prep note: inserted at conversion time per BCP 78 and the IETF
-   Trust's Legal Provisions.]
-
-Table of Contents (abbreviated for prep)
+Table of Contents
 
    1.  Introduction
    2.  Conventions and Terminology
@@ -855,8 +807,3 @@ Author's Address
    Sealgraf (operated by Sai Arun Labs)
    Email: support@sealgraf.com
    URI: https://sealgraf.com
-
---- END OF DRAFT PREP ---
-Nothing in this file has been submitted anywhere. Conversion to
-RFCXML, idnits checking, and Datatracker submission are separate,
-explicitly-approved steps (see the header note).
