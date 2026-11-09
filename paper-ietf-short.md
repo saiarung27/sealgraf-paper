@@ -804,6 +804,6 @@ Table of Contents
 Author's Address
 
    Sai Arun Gunuganti
-   Sealgraf (operated by Sai Arun Labs)
+   Sealgraf
    Email: support@sealgraf.com
    URI: https://sealgraf.com

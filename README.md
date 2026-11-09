@@ -1,6 +1,6 @@
 # Approval You Can Verify: Owner-Approved Agent Spending with Sealed Evidence
 
-**Sai Arun Gunuganti** — Sealgraf (operated by Sai Arun Labs) — Contact: support@sealgraf.com
+**Sai Arun Gunuganti** — Sealgraf — Contact: support@sealgraf.com
 
 Technical paper, November 2026. License: Creative Commons Attribution 4.0 International (CC BY 4.0) — see `LICENSE`.
 
