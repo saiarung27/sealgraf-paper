@@ -102,6 +102,21 @@ Table of Contents
    This document describes a system, in production since
    2 November 2026, designed against those three properties, and
    derives from it a protocol object (Section 4) proposed for
+   The design position taken in this document exists for a
+   reason larger than the disputes the mechanism settles. As
+   agents begin to spend, shop, and commit on a principal's
+   behalf, the default outcome, unless it is designed against,
+   is that the principal quietly ceases to be the owner of
+   their money in any practical sense: the agent acts, the
+   platform attests, and the principal's part is reduced to
+   having once agreed to terms they never saw. The position
+   taken here is the opposite. The owner sets the terms in
+   advance, decides personally above a line they chose, and
+   holds the evidence themself. Delegation does not have to
+   mean surrender: an agent can be given real power to act
+   while the authority over the money, and the proof of how it
+   was used, stays with the person whose money it is.
+
    adoption by agent action protocols. The system is Sealgraf, an
    approval-and-evidence layer for agent spending: it checks, it
    records, and it never moves money.

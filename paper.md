@@ -114,6 +114,20 @@ new. The claim is narrower: the combination is running, and the full
 loop has executed end-to-end with real money in the operator's own
 deployment (Section 4, including its limits).
 
+The mechanism in this paper exists for a reason larger than the
+disputes it settles. As agents begin to spend, shop, and commit on a
+person's behalf, the default outcome — unless it is designed
+against — is that the person quietly stops being the owner of their
+money in any practical sense: the agent acts, the platform attests,
+and the owner's part is reduced to having once agreed to terms they
+never saw. The design position of this paper is the opposite. The
+owner sets the terms in advance, decides personally above a line
+they chose, and holds the evidence themselves. Delegation does not
+have to mean surrender: an agent can be given real power to act
+while the authority over the money — and the proof of how it was
+used — stays with the person whose money it is. That, and not the
+receipt format, is the claim the mechanism serves.
+
 ## 2. Design
 
 Sealgraf is an approval-and-evidence layer for agent spending. It
