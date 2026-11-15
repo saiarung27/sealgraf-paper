@@ -4,7 +4,7 @@
 
 Technical paper, version 1.2, 15 November 2026. License: Creative Commons Attribution 4.0 International (CC BY 4.0) — see `LICENSE`.
 
-**DOI:** [10.5281/zenodo.24207918](https://doi.org/10.5281/zenodo.24207918) — Zenodo, v1.1 (all-versions DOI: [10.5281/zenodo.24207917](https://doi.org/10.5281/zenodo.24207917)). Canonical page: https://sealgraf.com/paper
+**DOI:** [10.5281/zenodo.24247009](https://doi.org/10.5281/zenodo.24247009) — Zenodo, v1.2 (all-versions DOI: [10.5281/zenodo.24207917](https://doi.org/10.5281/zenodo.24207917)). Canonical page: https://sealgraf.com/paper
 
 ## Abstract
 
