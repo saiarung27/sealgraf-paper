@@ -3,7 +3,7 @@
 **Sai Arun Gunuganti**
 Sealgraf — Contact: support@sealgraf.com
 
-*Technical paper, November 2026. This paper is not peer-reviewed. It is
+*Technical paper, version 1.2, 15 November 2026. This paper is not peer-reviewed. It is
 published as a technical description of a running system, as prior art,
 and as a contribution to protocol work in progress. The system it
 describes, Sealgraf, has been in production since 2 November 2026.*
@@ -23,9 +23,9 @@ sets machine-checkable limits in advance (a *mandate*). An agent checks
 each proposed purchase against those limits before spending; a
 deterministic engine decides, and the decision is persisted and sealed
 before any spendable token exists. Purchases above an owner-set line
-are decided by the owner personally, on the owner's own authenticated
-surface — a surface the agent can notify but cannot operate, imitate,
-or replay. Approval mints a single-use token bound to the hash of the
+are decided by the owner personally — or by a person the owner invited
+to approve — on their own authenticated surface, a surface the agent
+can notify but cannot operate, imitate, or replay. Approval mints a single-use token bound to the hash of the
 exact action approved. The result is a sealed, owner-held receipt in
 which two grades of fact are kept deliberately separate: the approval
 is *proven*; the performer's report of what happened next, including
@@ -227,6 +227,20 @@ The approval is recorded as its own sealed statement, carrying:
   and by what method the approver authenticated). The verifier
   displays this freshness record and applies no verdict to it; whether
   it is good enough is the reader's policy.
+
+**Invited approvers.** The owner may invite up to three people — a
+partner, a bookkeeper — to decide escalations too. An invited approver
+decides the same way the owner does: in their own authenticated
+session, never from a notification or any channel the agent can
+originate. They hold no other authority — they cannot change the
+mandate, the keys, or any setting — and the owner can remove them at
+any time, effective on their next action. Their approval is sealed in
+its own form (approval `schema_version` 5): the principal is the
+approver's *own* account, in the role `approver`, so a receipt never
+presents an approver's decision as the owner's. Owner approvals keep
+the earlier form unchanged, and a verifier that predates version 5
+rejects an approver's receipt as unsupported rather than misreading
+it.
 
 Approval mints a **decision token**: single-use, bound to the action
 hash, valid for 15 minutes (900 seconds), stored only as a hash. The

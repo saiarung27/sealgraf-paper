@@ -224,11 +224,14 @@ Table of Contents
       mandate id + version        the standing permission the
                                   approval was judged under
       approver                    the authenticated identity of the
-                                  approver, and its authentication
-                                  context (method and freshness, as
-                                  recorded by the surface)
+                                  approver, the role it acted in
+                                  (the owner, or a person the owner
+                                  invited to approve), and its
+                                  authentication context (method
+                                  and freshness, as recorded by the
+                                  surface)
       outcome                     approval or refusal
-      decision time               when the owner decided
+      decision time               when the approver decided
       terms digest context        the mandate version's sealed
                                   digest, where limits exist
       service signature           over the canonical object, with
@@ -380,6 +383,16 @@ Table of Contents
    approval can be given through any channel the agent can
    originate. This, and not the later signature, is what makes the
    approval hard to fabricate.
+
+   The owner may invite other people (a partner, a bookkeeper) to
+   decide escalations. An invited approver decides in their own
+   authenticated session on the same surface, holds no other
+   authority (no change to the mandate, keys, or settings), and can
+   be removed by the owner at any time. Their approval names their
+   own account in the role "approver", in a statement form of its
+   own, so a receipt never presents an invited approver's decision
+   as the owner's; a verifier that does not know that form rejects
+   the receipt as unsupported rather than misreading it.
 
    An approval is sealed as its own statement, carrying: the
    action hash approved; the authenticated principal who approved
